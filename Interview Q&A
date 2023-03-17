@@ -1,0 +1,15 @@
+- What does it mean to create a Docker image and why do we use Docker images?
+Docker is a popular containerization platform that allows you to package your application along with its dependencies into a self-contained unit called a Docker image. A Docker image is essentially a lightweight, standalone, and executable package that includes everything needed to run your application, including the operating system, system tools, and libraries. The benefits of Docker image is portability, security, scalable, and consistency.
+
+
+- Please explain what is the difference from a Container vs a Virtual Machine?
+A virtual machine is a software emulation of a physical computer that runs an operating system (OS) and applications as if they were running on a physical machine. A VM runs on a hypervisor, which allows multiple VMs to run on a single physical host machine, each with its own OS and resources.
+A container, on the other hand, is a lightweight and isolated environment that runs a specific application and its dependencies, but shares the underlying operating system kernel with the host machine. Containers are created from images that contain everything needed to run the application, including libraries, dependencies, and the application code itself.
+
+- What are 5 examples of container orchestration tools (please list tools)?
+Kubernetes, Docker Swarm, Nomad, OpenShift, Apache Mesos
+
+- How does a Docker image differ from a Docker container?
+A Docker image and a Docker container are two distinct concepts in the Docker ecosystem, and they serve different purposes.
+A Docker image is a read-only template that contains everything needed to run an application, including the application code, system tools, and dependencies. It is essentially a snapshot of a Docker container at a specific point in time. You can think of a Docker image as a recipe or blueprint for creating Docker containers.
+A Docker container, on the other hand, is a runnable instance of a Docker image. It is created by instantiating a Docker image, and it has its own runtime environment, including a writable file system and a network interface. You can think of a Docker container as a lightweight, portable, and self-contained runtime environment for running an application.
